@@ -1,0 +1,20 @@
+{% extends 'master.html' %}
+{% block contents %}
+<body>
+<table>
+    <thaed>
+        <tr>
+            <th>title</th>
+            <th>content</th>
+        </tr>
+    </thaed>
+    {% for cat in cats %}
+        <tr>
+        <td>{{ cat.catName }}</td>
+        <td>{{ cat.catDesc }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
+{% endblock %}
